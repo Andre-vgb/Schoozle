@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoozle - Sneakers Exclusivos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+/* ==========================================
+   PÁGINA INICIAL (HOME)
+   ========================================== */
+/* Conteúdo principal */
+main { 
+  padding: 20px 5%; 
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Seção Hero */
+.hero { 
+  display: flex; 
+  background: var(--bege); 
+  margin-bottom: 20px; 
+  border: 1px solid var(--cinza);
+  width: 100%;
+  border-radius: 50px;
+}
+.hero-content { padding: 20px 5%; flex: 1; }
+.hero-image { 
+  background: #eee; 
+  min-height: 300px; 
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+}
+
+/* Produtos em destaque */
+.featured-products {
+  width: 100%;
+}
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+ 
+}
+.product-card {
+  width: 280px;
+  border: 1px solid #ccc;
+  padding-bottom: 10px;
+  text-align: center;
+  flex-grow: 1;
+  max-width: 400px;
+  border-radius: 20px;
+ 
+}
+.product-image { 
+  background: #eee; 
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  position: relative;
+  border-radius: 20px;
+}
+.product-tag {
+  background: var(--marrom);
+  color: white;
+  padding: 3px 8px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.price { color: var(--marrom); }
+
+/* Seção de destaque da coleção */
+.collection-highlight { 
+  display: flex; 
+  background: var(--bege); 
+  margin-bottom: 20px; 
+  border: 1px solid var(--cinza);
+  width: 100%;
+  border-radius: 20px;
+}
+.collection-content { padding: 20px 5%; flex: 1; }
+.collection-image { 
+  background: #eee; 
+  min-height: 300px; 
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+}
+
+</style>
+
+<body>
+
+
+    <header>
+
+        <section class="top-header">
+            <a href="index.html" class="logo">
+                <h1>Shoozle</h1>
+            </a>
+        </section>
+        
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="colecao.html">Coleção</a></li>
+                <li><a href="raros.html">Raros</a></li>
+                <li><a href="sobre.html">Sobre nós</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <article class="hero-content">
+                <h2>Os sneakers mais raros e cobiçados, direto para sua coleção.</h2>
+                <p>Cada par conta uma história. Cada modelo é uma obra de arte. Eleve seu estilo com peças exclusivas que poucos podem ter.</p>
+                <a href="#" class="cta-button">Explorar coleção</a>
+            </article>
+            <figure class="hero-image">
+                <img src="" alt="">
+                <figcaption class="placeholder-image"></figcaption>
+            </figure>
+        </section>
+
+        <section class="featured-products">
+            <h2>Destaques da Coleção</h2>
+            <section class="product-grid">
+                <article class="product-card">
+                    <figure class="product-image">
+                         <img src="" alt="">
+                        <figcaption class="placeholder-image"></figcaption>
+                        <mark class="product-tag">Exclusivo</mark>
+                    </figure>
+                    <h3>Air Premium Limited</h3>
+                    <p class="price">R$ 2.499,00</p>
+                    <a href="#" class="product-button">Reservar</a>
+                </article>
+                
+                <article class="product-card">
+                    <figure class="product-image">
+                      <img src="" alt="">
+                        <figcaption class="placeholder-image"></figcaption>
+                        <mark class="product-tag">Raro</mark>
+                    </figure>
+                    <h3>Classic Vintage 90</h3>
+                    <p class="price">R$ 3.799,00</p>
+                    <a href="#" class="product-button">Reservar</a>
+                </article>
+            </section>
+        </section>
+
+        <section class="collection-highlight">
+            <article class="collection-content">
+                <h2>Coleção Limitada</h2>
+                <p>Peças únicas com design exclusivo e materiais premium. Nossa coleção limitada traz o que há de mais raro no mundo dos sneakers.</p>
+                <a href="#" class="secondary-button">Conheça a coleção</a>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer-content">
+            <article class="footer-column">
+                <h3>Shoozle</h3>
+                <p>Especialistas em sneakers raros e exclusivos para colecionadores e entusiastas.</p>
+            </article>
+            
+            <nav class="footer-column">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="colecao.html">Coleção</a></li>
+                    <li><a href="raros.html">Raros</a></li>
+                    <li><a href="sobre.html">Sobre nós</a></li>
+                </ul>
+            </nav>
+            
+            <address class="footer-column">
+                <h3>Contato</h3>
+                <ul>
+                    <li>contato@shoozle.com</li>
+                    <li>(47) 99999-9999</li>
+                    <li>Bruque-SC</li>
+                </ul>
+            </address>
+        </section>
+        
+        <small class="copyright">&copy; 2025 Shoozle. Todos os direitos reservados.</small>
+    </footer>
+</body>
+</html>
