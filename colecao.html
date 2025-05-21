@@ -1,36 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coleção - Shoozle</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
     <header>
-
+        <p class="announcement-bar">FRETE GRÁTIS EM COMPRAS ACIMA DE R$1.000</p>
+        
         <section class="top-header">
+            <details class="search-container">
+                <summary aria-label="Buscar"></summary>
+                <form class="search-form" action="#" method="get">
+                    <input type="text" placeholder="Buscar...">
+                    <button type="submit">Buscar</button>
+                </form>
+            </details>
+            
             <a href="index.html" class="logo">
                 <h1>Shoozle</h1>
             </a>
+            
+            <nav class="user-nav">
+                <a href="#" class="user-link">Login</a>
+                <a href="#" class="cart-link">Carrinho</a>
+            </nav>
         </section>
-
+        
         <nav class="main-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="colecao.html">Coleção</a></li>
                 <li><a href="raros.html">Raros</a></li>
                 <li><a href="sobre.html">Sobre nós</a></li>
+                <li><a href="#">Contato</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
         <header class="collection-header">
             <h2>Nossa Coleção</h2>
-            <p>Descubra os sneakers mais exclusivos do mercado, selecionados especialmente para colecionadores
-                exigentes.</p>
+            <p>Descubra os sneakers mais exclusivos do mercado, selecionados especialmente para colecionadores exigentes.</p>
         </header>
 
         <section class="collection-filters">
@@ -53,7 +66,7 @@
                     <p class="price">R$ 2.499,00</p>
                     <a href="#" class="product-button">Ver detalhes</a>
                 </article>
-
+                
                 <article class="product-card">
                     <figure class="product-image">
                         <figcaption class="placeholder-image"></figcaption>
@@ -63,7 +76,7 @@
                     <p class="price">R$ 3.799,00</p>
                     <a href="#" class="product-button">Ver detalhes</a>
                 </article>
-
+                
                 <article class="product-card">
                     <figure class="product-image">
                         <figcaption class="placeholder-image"></figcaption>
@@ -73,7 +86,7 @@
                     <p class="price">R$ 4.299,00</p>
                     <a href="#" class="product-button">Ver detalhes</a>
                 </article>
-
+                
                 <article class="product-card">
                     <figure class="product-image">
                         <figcaption class="placeholder-image"></figcaption>
@@ -83,7 +96,7 @@
                     <p class="price">R$ 1.899,00</p>
                     <a href="#" class="product-button">Ver detalhes</a>
                 </article>
-
+                
                 <article class="product-card">
                     <figure class="product-image">
                         <figcaption class="placeholder-image"></figcaption>
@@ -93,7 +106,7 @@
                     <p class="price">R$ 5.999,00</p>
                     <a href="#" class="product-button">Ver detalhes</a>
                 </article>
-
+                
                 <article class="product-card">
                     <figure class="product-image">
                         <figcaption class="placeholder-image"></figcaption>
@@ -107,13 +120,13 @@
         </section>
     </main>
 
-<footer>
+    <footer>
         <section class="footer-content">
             <article class="footer-column">
                 <h3>Shoozle</h3>
                 <p>Especialistas em sneakers raros e exclusivos para colecionadores e entusiastas.</p>
             </article>
-
+            
             <nav class="footer-column">
                 <h3>Links Rápidos</h3>
                 <ul>
@@ -123,19 +136,18 @@
                     <li><a href="sobre.html">Sobre nós</a></li>
                 </ul>
             </nav>
-
+            
             <address class="footer-column">
                 <h3>Contato</h3>
                 <ul>
                     <li>contato@shoozle.com</li>
-                    <li>(47) 99999-9999</li>
-                    <li>Bruque-SC</li>
+                    <li>(11) 99999-9999</li>
+                    <li>São Paulo, SP</li>
                 </ul>
             </address>
         </section>
-
+        
         <small class="copyright">&copy; 2025 Shoozle. Todos os direitos reservados.</small>
     </footer>
 </body>
-
 </html>
