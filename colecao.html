@@ -14,6 +14,11 @@
         padding: 30px 5%;
         text-align: center;
         width: 100%;
+        border-radius: 50px;
+    }
+
+    .collection-header p {
+        text-align: center;
     }
 
     .filter-options {
@@ -24,18 +29,6 @@
         margin: 20px 0;
         flex-wrap: wrap;
         width: 100%;
-    }
-
-    .filter-button {
-        background: white;
-        border: 1px solid #ccc;
-        padding: 5px 10px;
-        cursor: pointer;
-    }
-
-    .filter-button.active {
-        background: var(--cinza);
-        color: white;
     }
 
     .collection-products {
@@ -85,15 +78,6 @@
             <p>Descubra os sneakers mais exclusivos do mercado, selecionados especialmente para colecionadores
                 exigentes.</p>
         </header>
-
-        <section class="collection-filters">
-            <menu class="filter-options">
-                <li><button class="filter-button active">Todos</button></li>
-                <li><button class="filter-button">Clássicos</button></li>
-                <li><button class="filter-button">Edição Limitada</button></li>
-                <li><button class="filter-button">Colaborações</button></li>
-            </menu>
-        </section>
 
         <section class="collection-products">
             <section class="product-grid">
