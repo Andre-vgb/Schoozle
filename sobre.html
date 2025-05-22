@@ -18,6 +18,10 @@
         width: 100%;
     }
 
+    .historia-paragrafo {
+        text-align: center;
+    }
+
     .about-content {
         padding: 20px 5%;
         width: 100%;
@@ -41,32 +45,26 @@
         flex: 1;
         min-width: 300px;
         border: 1px solid #ccc;
+        border-radius: 10px;
         padding: 15px;
+        text-align: center;
+    }
+
+    .about-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 </style>
 
 
 <body>
     <header>
-        <p class="announcement-bar">FRETE GRÁTIS EM COMPRAS ACIMA DE R$1.000</p>
 
         <section class="top-header">
-            <details class="search-container">
-                <summary aria-label="Buscar"></summary>
-                <form class="search-form" action="#" method="get">
-                    <input type="text" placeholder="Buscar...">
-                    <button type="submit">Buscar</button>
-                </form>
-            </details>
-
             <a href="index.html" class="logo">
                 <h1>Shoozle</h1>
             </a>
-
-            <nav class="user-nav">
-                <a href="#" class="user-link">Login</a>
-                <a href="#" class="cart-link">Carrinho</a>
-            </nav>
         </section>
 
         <nav class="main-nav">
@@ -75,7 +73,6 @@
                 <li><a href="colecao.html">Coleção</a></li>
                 <li><a href="raros.html">Raros</a></li>
                 <li><a href="sobre.html">Sobre nós</a></li>
-                <li><a href="#">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -83,7 +80,8 @@
     <main>
         <header class="about-hero">
             <h2>Nossa História</h2>
-            <p>A Shoozle nasceu da paixão por sneakers raros e da vontade de compartilhar essa cultura com verdadeiros
+            <p class="historia-paragrafo">A Shoozle nasceu da paixão por sneakers raros e da vontade de compartilhar
+                essa cultura com verdadeiros
                 entusiastas e colecionadores.</p>
         </header>
 
@@ -160,8 +158,8 @@
                 <h3>Contato</h3>
                 <ul>
                     <li>contato@shoozle.com</li>
-                    <li>(11) 99999-9999</li>
-                    <li>São Paulo, SP</li>
+                    <li>(47) 99999-9999</li>
+                    <li>Bruque-SC</li>
                 </ul>
             </address>
         </section>
