@@ -32,8 +32,9 @@ ul { margin-left: 20px; }
   color: white;
   padding: 8px 15px;
   text-decoration: none;
-  margin: 10px 0;
+  margin: 10px 100px;
   border-radius: 30px;
+  
 }
 .secondary-button {
   display: inline-block;
@@ -42,6 +43,16 @@ ul { margin-left: 20px; }
   padding: 8px 15px;
   text-decoration: none;
   border-radius: 30px;
+}
+.product-button:hover{
+  background-color: var(--bege);
+}
+.secondary-button:hover {
+ background-color: var(--bege);
+}
+
+.cta-button:hover{
+  background-color: var(--bege);
 }
 
 
@@ -82,7 +93,7 @@ header {
   gap: 20px;
 }
 .main-nav { 
-  background: var(--bege); 
+  background: var(--marrom); 
   padding: 10px; 
   width: 100%;
 }
@@ -205,14 +216,11 @@ main {
 .product-grid {
   display: flex;
   flex-wrap: wrap;
-  gap:30px;
+  gap: 30px;
   justify-content: center;
-  width: 100%;
-  max-width: 1600px;
-  margin: 0 auto;
- 
+  align-items: stretch;
 }
-.product-card {
+  .product-card {
   width: 280px;
   border: 1px solid #ccc;
   padding-bottom: 10px;
@@ -220,23 +228,30 @@ main {
   flex-grow: 1;
   max-width: 400px;
   border-radius: 20px;
-   background-color: var(--marrom);
- 
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
+  height: 100%; 
+background-color: var(--marrom);
 }
+
 .product-card:hover {
  transform: scale(1.05);
  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
  transition: transform 0.7s ease, box-shadow 0.7s ease;
 }
 
-.product-image { 
-  background: #eee; 
+.product-image {
+  background: #eee;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid #ccc;
   position: relative;
   border-radius: 20px;
+  height: 300px;
+  overflow: hidden; 
+  background-color: white;
 }
 .product-tag {
     background: var(--marrom);
