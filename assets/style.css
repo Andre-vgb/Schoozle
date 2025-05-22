@@ -2,9 +2,10 @@
    CONFIGURAÇÕES GLOBAIS
    ========================================== */
 :root {
+  --grafite:#2E2E2E;
   --cinza: #4D4D4D;
   --marrom: #8B4513;
-  --bege: #F5F5DC;
+  --bege: #838383;
 }
 
 /* Reset e estilos base */
@@ -16,42 +17,44 @@ body {
   color: black;
   width: 100%;
   margin: 0;
+  background-color: var(--cinza);
 }
 
-h1, h2, h3, h4 { margin: 0.5em 0; }
-p { margin-bottom: 1em; text-align: justify; }
-a { color: var(--marrom); text-decoration: underline; }
+h1, h2, h3, h4 {color: black; margin: 0.5em 0; }
+p {color: black; margin-bottom: 1em; text-align: justify; }
+a { color: var(--grafite); text-decoration: underline; }
 ul { margin-left: 20px; }
 
 /* Botões comuns a todas as páginas */
 .cta-button, .product-button {
   display: inline-block;
-  background: var(--marrom);
+  background: var(--grafite);
   color: white;
   padding: 8px 15px;
   text-decoration: none;
   margin: 10px 0;
+  border-radius: 30px;
 }
 .secondary-button {
   display: inline-block;
-  border: 1px solid var(--marrom);
-  color: var(--marrom);
+  border: 1px solid var(--grafite);
+  color: var(--grafite);
   padding: 8px 15px;
   text-decoration: none;
+  border-radius: 30px;
 }
+
+
+
+
+
+
 
 /* ==========================================
    CABEÇALHO (COMUM A TODAS AS PÁGINAS)
    ========================================== */
 header { 
-  border-bottom: 2px solid var(--cinza); 
-  width: 100%;
-}
-.announcement-bar { 
-  background: var(--cinza); 
-  color: white; 
-  text-align: center; 
-  padding: 10px; 
+  border-bottom: 2px solid var(--grafite); 
   width: 100%;
 }
 .top-header { 
@@ -67,7 +70,7 @@ header {
   text-align: center;
 }
 .logo h1 { 
-  color: var(--cinza);
+  color: var(--grafite);
   font-size: 60px;
 }
 .search-container {
@@ -92,12 +95,39 @@ header {
 }
 .main-nav a { text-decoration: none; }
 
+
+
+
+/*============================================
+==============================================
+================ INOVAÇÃO ====================
+==============================================
+==============================================*/
+
+header, footer { 
+  background: linear-gradient(45deg, var(--cinza), var(--marrom), var(--bege), var(--cinza));
+  background-size: 400% 400%;
+  animation: gradiente-animado 10s ease infinite;
+  color: white;
+}
+
+@keyframes gradiente-animado {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+
+
+
+
 /* ==========================================
    RODAPÉ (COMUM A TODAS AS PÁGINAS)
    ========================================== */
+
 footer {
-  background: var(--cinza);
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 20px 5%;
   margin-top: 30px;
   width: 100%;
@@ -109,15 +139,23 @@ footer {
   max-width: 1600px;
   margin: 0 auto;
 }
+
 .footer-column { flex: 1; min-width: 200px; }
+
 .footer-column ul { list-style: none; margin-left: 0; }
-.footer-column a { color: white; }
+
+.footer-column a { color:black }
+
 .copyright {
   text-align: center;
   margin-top: 20px;
   padding-top: 10px;
   border-top: 1px solid rgba(255,255,255,0.3);
 }
+
+
+
+
 
 
 
@@ -134,7 +172,7 @@ main {
 /* Seção Hero */
 .hero { 
   display: flex; 
-  background: var(--bege); 
+  background: var(--marrom); 
   margin-bottom: 20px;
   border: 1px solid var(--cinza);
   width: 100%;
@@ -167,7 +205,7 @@ main {
 .product-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap:30px;
   justify-content: center;
   width: 100%;
   max-width: 1600px;
@@ -182,6 +220,7 @@ main {
   flex-grow: 1;
   max-width: 400px;
   border-radius: 20px;
+   background-color: var(--marrom);
  
 }
 .product-card:hover {
@@ -192,7 +231,6 @@ main {
 
 .product-image { 
   background: #eee; 
-  min-height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -208,14 +246,14 @@ main {
     top: 10px;
     right: 10px;
 }
-.price { color: var(--marrom); }
+.price { color: var(--grafite); }
 
 /* Seção de destaque da coleção */
 .collection-highlight { 
     display: flex; 
-    background: var(--bege); 
+    background: var(--marrom); 
   margin-bottom: 20px; 
-  border: 1px solid var(--cinza);
+  border: 1px solid var(--grafite);
   width: 100%;
   border-radius: 20px;
 }
@@ -225,8 +263,9 @@ text-align: center;
 }
 
 .collection-content { padding: 20px 5%; flex: 1; }
+
 .collection-image { 
-    background: #eee; 
+  background: #eee; 
   min-height: 300px; 
   flex: 1;
   display: flex;
@@ -242,10 +281,18 @@ text-align: center;
   object-fit: contain;
 }
 
+
+
+
+
+
+
+
+
 /* ==========================================
    RESPONSIVIDADE (TODAS AS PÁGINAS)
    ========================================== */
-   
+
 @media (max-width: 768px) {
   /* Layout geral */
   .hero, .collection-highlight, .rare-item { flex-direction: column; }
