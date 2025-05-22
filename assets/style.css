@@ -31,6 +31,7 @@ ul { margin-left: 20px; }
   padding: 8px 15px;
   text-decoration: none;
   margin: 10px 0;
+  border-radius: 30px;
 }
 .secondary-button {
   display: inline-block;
@@ -38,6 +39,7 @@ ul { margin-left: 20px; }
   color: var(--marrom);
   padding: 8px 15px;
   text-decoration: none;
+  border-radius: 30px;
 }
 
 /* ==========================================
@@ -225,6 +227,7 @@ text-align: center;
 }
 
 .collection-content { padding: 20px 5%; flex: 1; }
+
 .collection-image { 
     background: #eee; 
   min-height: 300px; 
@@ -245,7 +248,7 @@ text-align: center;
 /* ==========================================
    RESPONSIVIDADE (TODAS AS PÁGINAS)
    ========================================== */
-   
+
 @media (max-width: 768px) {
   /* Layout geral */
   .hero, .collection-highlight, .rare-item { flex-direction: column; }
