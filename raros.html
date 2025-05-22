@@ -6,27 +6,46 @@
     <title>Raros - Shoozle</title>
     <link rel="stylesheet" href="assets/style.css">
 </head>
+<style>
+    .rare-header { 
+  background: var(--marrom); 
+  color: white; 
+  padding: 20px 5%; 
+  text-align: center; 
+  width: 100%;
+}
+.rare-featured {
+  padding: 20px 5%;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.rare-item {
+  display: flex;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+  width: 100%;
+}
+.rare-item-image { 
+  background: #eee; 
+  min-height: 300px; 
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+}
+.rare-item-content { padding: 0 20px; flex: 1; }
+
+</style>
 <body>
     <header>
-        <p class="announcement-bar">FRETE GRÁTIS EM COMPRAS ACIMA DE R$1.000</p>
-        
+
         <section class="top-header">
-            <details class="search-container">
-                <summary aria-label="Buscar"></summary>
-                <form class="search-form" action="#" method="get">
-                    <input type="text" placeholder="Buscar...">
-                    <button type="submit">Buscar</button>
-                </form>
-            </details>
-            
             <a href="index.html" class="logo">
                 <h1>Shoozle</h1>
             </a>
-            
-            <nav class="user-nav">
-                <a href="#" class="user-link">Login</a>
-                <a href="#" class="cart-link">Carrinho</a>
-            </nav>
         </section>
         
         <nav class="main-nav">
@@ -35,7 +54,6 @@
                 <li><a href="colecao.html">Coleção</a></li>
                 <li><a href="raros.html">Raros</a></li>
                 <li><a href="sobre.html">Sobre nós</a></li>
-                <li><a href="#">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -86,8 +104,7 @@
             </article>
         </section>
     </main>
-
-    <footer>
+<footer>
         <section class="footer-content">
             <article class="footer-column">
                 <h3>Shoozle</h3>
@@ -108,13 +125,14 @@
                 <h3>Contato</h3>
                 <ul>
                     <li>contato@shoozle.com</li>
-                    <li>(11) 99999-9999</li>
-                    <li>São Paulo, SP</li>
+                    <li>(47) 99999-9999</li>
+                    <li>Bruque-SC</li>
                 </ul>
             </address>
         </section>
         
         <small class="copyright">&copy; 2025 Shoozle. Todos os direitos reservados.</small>
     </footer>
+    
 </body>
 </html>

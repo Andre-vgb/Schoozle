@@ -1,2 +1,3 @@
 # Schoozle
-Site para o trabalho academico de DESENVOLVIMENTO-WEB.
+Site para o trabalho academico de DESENVOLVIMENTO-WEB 
+Marco
