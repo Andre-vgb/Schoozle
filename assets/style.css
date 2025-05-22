@@ -119,3 +119,123 @@ footer {
   border-top: 1px solid rgba(255,255,255,0.3);
 }
 
+
+
+/* ==========================================
+   PÁGINA INICIAL (HOME)
+   ========================================== */
+/* Conteúdo principal */
+main { 
+  padding: 20px 5%; 
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Seção Hero */
+.hero { 
+  display: flex; 
+  background: var(--bege); 
+  margin-bottom: 20px;
+  border: 1px solid var(--cinza);
+  width: 100%;
+  border-radius: 50px;
+}
+.hero-content { padding: 20px 5%; }
+
+/* imagem na seção hero */
+.hero-image img {
+  max-width: 100%;
+  height:100%;
+  border-radius: 50px;
+}
+
+/*  cards de produtos */
+.product-image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+
+
+/* Produtos em destaque */
+.featured-products {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+
+}
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+ 
+}
+.product-card {
+  width: 280px;
+  border: 1px solid #ccc;
+  padding-bottom: 10px;
+  text-align: center;
+  flex-grow: 1;
+  max-width: 400px;
+  border-radius: 20px;
+ 
+}
+
+.product-image { 
+  background: #eee; 
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  position: relative;
+  border-radius: 20px;
+}
+.product-tag {
+    background: var(--marrom);
+    color: white;
+    padding: 3px 8px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.price { color: var(--marrom); }
+
+/* Seção de destaque da coleção */
+.collection-highlight { 
+    display: flex; 
+    background: var(--bege); 
+  margin-bottom: 20px; 
+  border: 1px solid var(--cinza);
+  width: 100%;
+  border-radius: 20px;
+}
+
+.price{
+text-align: center;
+}
+
+.collection-content { padding: 20px 5%; flex: 1; }
+.collection-image { 
+    background: #eee; 
+  min-height: 300px; 
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+}
+
+/* seção de destaque da coleção */
+.collection-image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
