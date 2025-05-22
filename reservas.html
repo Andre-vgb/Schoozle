@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoozle - Reservas</title>
+    <link rel="stylesheet" href="assets/style.css">
+    
+</head>
+<style>
+
+/* ==========================
+   PÁGINA DE RESERVAS 
+   ========================= */
+
+/* Estilo para a seção hero da página de reservas */
+.reservation-hero {
+  background: var(--marrom);
+  margin-bottom: 20px;
+  padding: 20px 5%;
+  border-radius: 50px;
+  border: 1px solid var(--cinza);
+}
+
+/* Estilo para o container do formulário */
+.reservation-form-container {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  background-color: var(--cinza);
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid var(--grafite);
+}
+
+/* Estilo para os fieldsets */
+.reservation-form fieldset {
+  border: 1px solid var(--grafite);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  background-color:var(--marrom);
+}
+
+/* Estilo para os labels e inputs */
+.reservation-form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.reservation-form input[type="text"],
+.reservation-form input[type="email"],
+.reservation-form input[type="tel"],
+.reservation-form select,
+.reservation-form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--bege);
+  border-radius: 5px;
+}
+
+/* Estilo para o checkbox */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+</style>
+<body>
+    <header>
+        <section class="top-header">
+            <a href="index.html" class="logo">
+                <h1>Shoozle</h1>
+            </a>
+        </section>
+        
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="colecao.html">Coleção</a></li>
+                <li><a href="raros.html">Raros</a></li>
+                <li><a href="sobre.html">Sobre nós</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="reservation-hero">
+            <article class="reservation-content">
+                <h2>Reserve seu Sneaker Exclusivo</h2>
+                <p>Preencha o formulário abaixo para garantir seu par de sneakers exclusivos. Nossa equipe entrará em contato para confirmar sua reserva e fornecer informações sobre pagamento e retirada.</p>
+            </article>
+        </section>
+
+        <section class="reservation-form-container">
+            <form class="reservation-form">
+                <fieldset>
+                    <h3>Nome completo:</h3>
+                    
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+                    
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+                </fieldset>
+                
+                <fieldset>
+                    <h3>Informações do Produto</h3>
+                    
+                    <label for="modelo">Modelo do Sneaker:</label>
+                    <select id="modelo" name="modelo" required>
+                        <option value="">Selecione um modelo</option>
+                        <option value="air-premium">Air Premium Limited</option>
+                        <option value="classic-vintage">Classic Vintage 90</option>
+                        <option value="tailwind-red">Tailwind Red</option>
+                        <option value="adi-2000">ADI 2000</option>
+                        <option value="asics-gel">ASICS GEL NYC</option>
+                        <option value="nike-dunk">Nike Dunk High</option>
+                    </select>
+                    
+                    <label for="tamanho">Tamanho:</label>
+                    <select id="tamanho" name="tamanho" required>
+                        <option value="">Selecione um tamanho</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                    </select>
+                </fieldset>
+                
+                <fieldset>
+                    <h3>Informações Adicionais</h3>
+                    
+                    <label for="mensagem">Mensagem (opcional):</label>
+                    <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+                </fieldset>
+                
+                <button type="submit" class="cta-button">Confirmar Reserva</button>
+            </form>
+        </section>
+
+        <section class="collection-highlight">
+            <article class="collection-content">
+                <h2>Por que Reservar?</h2>
+                <p>Ao fazer uma reserva, você garante prioridade na compra de modelos exclusivos e raros. Nossos sneakers mais cobiçados têm estoque limitado e a reserva é a melhor forma de garantir que você não perderá aquele par dos seus sonhos.</p>
+                <a href="colecao.html" class="secondary-button">Ver mais modelos</a>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer-content">
+            <article class="footer-column">
+                <h3>Shoozle</h3>
+                <p>Especialistas em sneakers raros e exclusivos para colecionadores e entusiastas.</p>
+            </article>
+            
+            <nav class="footer-column">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="colecao.html">Coleção</a></li>
+                    <li><a href="raros.html">Raros</a></li>
+                    <li><a href="sobre.html">Sobre nós</a></li>
+                </ul>
+            </nav>
+            
+            <address class="footer-column">
+                <h3>Contato</h3>
+                <ul>
+                    <li>contato@shoozle.com</li>
+                    <li>(47) 99999-9999</li>
+                    <li>Bruque-SC</li>
+                </ul>
+            </address>
+        </section>
+        
+        <small class="copyright">&copy; 2025 Shoozle. Todos os direitos reservados.</small>
+    </footer>
+</body>
+</html>

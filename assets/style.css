@@ -222,7 +222,7 @@ main {
 }
   .product-card {
   width: 280px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--grafite);
   padding-bottom: 10px;
   text-align: center;
   flex-grow: 1;
@@ -242,11 +242,11 @@ background-color: var(--marrom);
 }
 
 .product-image {
-  background: #eee;
+  
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #ccc;
+  border: 1px solid var(--grafite);
   position: relative;
   border-radius: 20px;
   height: 300px;
@@ -340,4 +340,9 @@ text-align: center;
   }
 }
 
+@media (max-width: 768px) {
+  .reservation-form-container {
+    padding: 15px;
+  }
+}
 
