@@ -59,8 +59,6 @@ ul { margin-left: 20px; }
 
 
 
-
-
 /* ==========================================
    CABEÇALHO (COMUM A TODAS AS PÁGINAS)
    ========================================== */
@@ -84,14 +82,6 @@ header {
   color: var(--grafite);
   font-size: 60px;
 }
-.search-container {
-  flex: 0 0 auto;
-}
-.user-nav {
-  flex: 0 0 auto;
-  display: flex;
-  gap: 20px;
-}
 .main-nav { 
   background: var(--marrom); 
   padding: 10px; 
@@ -105,8 +95,6 @@ header {
   margin: 0;
 }
 .main-nav a { text-decoration: none; }
-
-
 
 
 /*============================================
@@ -163,8 +151,6 @@ footer {
   padding-top: 10px;
   border-top: 1px solid rgba(255,255,255,0.3);
 }
-
-
 
 
 
@@ -265,12 +251,15 @@ background-color: var(--marrom);
 
 /* Seção de destaque da coleção */
 .collection-highlight { 
-    display: flex; 
-    background: var(--marrom); 
+  background: var(--marrom); 
   margin-bottom: 20px; 
   border: 1px solid var(--grafite);
   width: 100%;
   border-radius: 20px;
+  text-align: center;
+}
+.collection-highlight p{
+  text-align: center;
 }
 
 .price{
@@ -295,11 +284,6 @@ text-align: center;
   height: auto;
   object-fit: contain;
 }
-
-
-
-
-
 
 
 
