@@ -298,20 +298,9 @@ text-align: center;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  
-  .logo {
-    order: 0;
-    width: auto;
-    flex: 1;
-    text-align: center;
-  }
-  
-  .user-nav {
-    order: 2;
-    flex: 0 0 auto;
-  }
 }
 
+/*responsividade da pagina Reservas*/
 @media (max-width: 768px) {
   .reservation-form-container {
     padding: 15px;
