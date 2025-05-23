@@ -261,25 +261,6 @@ text-align: center;
 
 .colecao-content { padding: 20px 5%; flex: 1; }
 
-.colecao-image { 
-  background: #eee; 
-  min-height: 300px; 
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #ccc;
-}
-
-/* seção de destaque da coleção */
-.colecao-image img {
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
-
-
 
 /* ==========================================
    RESPONSIVIDADE (TODAS AS PÁGINAS)
